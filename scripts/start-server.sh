@@ -24,14 +24,14 @@ echo "---Starting Fluxbox---"
 screen -d -m env HOME=/etc /usr/bin/fluxbox
 
 
-echo "---Starting Chrome---"
+echo "---Starting Chromium---"
 cd /browser
 
 while true
 do
   trickle -d 15000 -u 15000 chromium ${URL} -no-sandbox --disable-accelerated-video --bwsi --new-window --test-type --disable-accelerated-video --disable-gpu --dbus-stub --no-default-browser-check --no-first-run --bwsi --user-data-dir=/browser --disable-features=Titlebar --disable-dev-shm-usage>/dev/null &
   sleep 5
-  while pgrep -x "chrome" > /dev/null
+  while pgrep -x "chromium" > /dev/null
   do
     sleep 1
   done
