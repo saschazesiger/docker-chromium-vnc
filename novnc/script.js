@@ -6,7 +6,7 @@ window.onload = function () {
         encoding: '16bitInt',
         channels: 2,
         sampleRate: 48000,
-        flushingTime: 10
+        flushingTime: 20
     })
 
     var ws = new WebSocket(socketURL)
