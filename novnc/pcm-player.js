@@ -7,7 +7,7 @@ PCMPlayer.prototype.init = function(option) {
         encoding: '16bitInt',
         channels: 1,
         sampleRate: 8000,
-        flushingTime: 20
+        flushingTime: 5
     };
     this.option = Object.assign({}, defaults, option);
     this.samples = new Float32Array();
