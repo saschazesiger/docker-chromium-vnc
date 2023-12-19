@@ -3,7 +3,7 @@ FROM alpine:3.17
 LABEL maintainer="Don <novaspirit@novaspirit.com>"
 
 
-RUN apk add --no-cache sudo git xfce4 faenza-icon-theme bash python3 tigervnc firefox cmake wget i3wm i3status rxvt-unicode \
+RUN apk add --no-cache sudo git xfce4 faenza-icon-theme bash python3 tigervnc chromium cmake wget i3wm i3status rxvt-unicode \
     pulseaudio xfce4-pulseaudio-plugin pavucontrol pulseaudio-alsa alsa-plugins-pulse alsa-lib-dev nodejs npm \
     build-base \
     && adduser -h /home/alpine -s /bin/bash -S -D alpine && echo -e "alpine\nalpine" | passwd alpine \
