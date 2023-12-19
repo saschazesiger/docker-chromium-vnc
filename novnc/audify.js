@@ -31,7 +31,7 @@ rtAudio.openStream({
     },
     RtAudioFormat.RTAUDIO_SINT16, // PCM Format - Signed 16-bit integer
     48000, // Sampling rate is 44.1kHz
-    240, // Frame size is 1920 (40ms)
+    1920, // Frame size is 1920 (40ms)
     "MyStream", // The name of the stream (used for JACK Api)
     pcm => {
         wss.clients.forEach(function each(client) {
